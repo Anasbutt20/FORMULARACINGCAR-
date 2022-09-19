@@ -1,5 +1,1 @@
-sceneSetups:
-- path: Assets/RTG 1.3/Scenes/Scene-01.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
+sceneSetups: []
