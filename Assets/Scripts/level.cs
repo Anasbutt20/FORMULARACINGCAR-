@@ -4,18 +4,24 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
 public class level : MonoBehaviour
 {
     public GameObject MainMenu;
-    public GameObject CarSelection;
+    public GameObject carSelection;
     public GameObject levelSelection;
     public GameObject plane;
     public static int levelNum;
+    public GameObject load;
+    public static LEVELMANGER Instance;
+   
+   
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+     
     }
 
     // Update is called once per frame
@@ -26,28 +32,38 @@ public class level : MonoBehaviour
     public void startrace()
     {
         MainMenu.SetActive(false);
-        CarSelection.SetActive(true);
+        carSelection.SetActive(true);
+
+    }
+   
+ 
+    public void back()
+    {
+      
+        MainMenu.SetActive(true);
+        carSelection.SetActive(false);
 
     }
     public void selectcar()
     {
-       
-        CarSelection.SetActive(false);
-        plane.SetActive(false);
         levelSelection.SetActive(true);
-
-
+        carSelection.SetActive(false);
+        PlayerPrefs.SetInt("selectedcarid",ShopSystem.currentCarIndex);
     }
- 
-    public void back()
+
+    public void loading()
     {
-        MainMenu.SetActive(true);
-        CarSelection.SetActive(false);
+        levelSelection.SetActive(false);
+        load.SetActive(true);
     }
-    public void mood(int num)
+    public async void Mood(int num)
     {
         levelNum = num;
-        SceneManager.LoadScene(1);
+        //public async void loadscene(string sceneName)
+        
+           
     }
+  
+   
     
 }

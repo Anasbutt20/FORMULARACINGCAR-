@@ -38,7 +38,9 @@ public class RCC_CarControllerV3 : RCC_Core {
 	#endregion
 
 	public bool canControl = true;					// Enables / Disables controlling the vehicle. If enabled, can receive all inputs from InputManager.
-	public bool isGrounded = false;				// Is vehicle grounded completely now?
+	public bool isGrounded = false;
+	// Is vehicle grounded completely now?
+	
 
 	#region Wheels
 	// Wheel models of the vehicle.
@@ -2139,12 +2141,23 @@ public class RCC_CarControllerV3 : RCC_Core {
 		canControl = state;
 
 	}
+    private void OnTriggerEnter(Collider other)
+    {
+		print("winpanel");
+        if(other.tag == "Finish")
+        {
+			print("winpanel11111");
+			GamePlay.instance.WINPANEL();
+			Time.timeScale = 0;
+			
+        }
+    }
 
-	/// <summary>
-	/// Sets the engine state.
-	/// </summary>
-	/// <param name="state">If set to <c>true</c> state.</param>
-	public void SetEngine(bool state){
+    /// <summary>
+    /// Sets the engine state.
+    /// </summary>
+    /// <param name="state">If set to <c>true</c> state.</param>
+    public void SetEngine(bool state){
 
 		if (state)
 			StartEngine ();
@@ -2158,5 +2171,6 @@ public class RCC_CarControllerV3 : RCC_Core {
 		RCC_SceneManager.OnBehaviorChanged -= CheckBehavior;
 
 	}
+
 	
 } 

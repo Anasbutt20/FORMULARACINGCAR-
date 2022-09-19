@@ -11,5 +11,6 @@ public class PlayerSelection
     public int index;
     public int price;
     public bool isunlocked;
+    public Image locked;
     
 }
