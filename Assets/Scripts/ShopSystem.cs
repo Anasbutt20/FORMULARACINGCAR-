@@ -131,7 +131,7 @@ public class ShopSystem : MonoBehaviour
             carSelection.gameObject.SetActive(false);
             buybutton.gameObject.SetActive(true);
             c.locked.gameObject.SetActive(true);
-            buybutton.GetComponentInChildren<Text>().text = "buy" + c.price;
+            //buybutton.GetComponentInChildren<Text>().text = "buy" + c.price;
             if (c.price < PlayerPrefs.GetInt("coins", 0))
             {
                 c.locked.gameObject.SetActive(false);

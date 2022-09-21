@@ -14,7 +14,7 @@ public class level : MonoBehaviour
     public static int levelNum;
     public GameObject load;
     public static LEVELMANGER Instance;
-   
+    public GameObject SETTING;   
    
 
 
@@ -62,6 +62,11 @@ public class level : MonoBehaviour
         //public async void loadscene(string sceneName)
         
            
+    }
+    public void SET()
+    {
+        SETTING.SetActive(true);
+        MainMenu.SetActive(false);
     }
   
    

@@ -11,6 +11,7 @@ public class LevelSelection : MonoBehaviour
     [SerializeField] private GameObject _loadercanvas;
     [SerializeField] private Image _progressbar;
     public static int levelNum;
+    public Sprite unlock;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,10 +20,12 @@ public class LevelSelection : MonoBehaviour
             levelbutton[i].GetComponent<Button>().interactable= false;
         }
         Debug.Log(PlayerPrefs.GetInt("levelunlocked"));
+
         for(int i = 0; i <= PlayerPrefs.GetInt("levelunlocked"); i++)
         {
             Debug.Log(i);
             levelbutton[i].GetComponent<Button>().interactable = true;
+            levelbutton[i].GetComponent<Image>().sprite = unlock;
         }
     }
     private void Awake()

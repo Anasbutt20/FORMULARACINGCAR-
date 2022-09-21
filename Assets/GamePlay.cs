@@ -9,6 +9,7 @@ public class GamePlay : MonoBehaviour
     public GameObject winpanel;
     public static GamePlay instance;
     public GameObject pausepanel;
+    public GameObject rcccanvas;
    
 
 
@@ -28,20 +29,15 @@ public class GamePlay : MonoBehaviour
         
     {
         pausepanel.SetActive(true);
-        if (ispaused)
-        {
-            Time.timeScale = 1;
-            ispaused = false;
-        }
-        else
-        {
             Time.timeScale = 0;
-            ispaused = true;
-        }
+        rcccanvas.SetActive(false);
+           
     }
     public void WINPANEL()
     {
+        PlayerPrefs.SetInt("levelunlocked", LevelSelection.levelNum);
         winpanel.SetActive(true);
+        rcccanvas.SetActive(false);
     }
     public void RESTART()
     {
@@ -52,6 +48,7 @@ public class GamePlay : MonoBehaviour
     {
         Time.timeScale = 1;
         pausepanel.SetActive(false);
+        rcccanvas.SetActive(true);
     }
     public void Menu()
     {

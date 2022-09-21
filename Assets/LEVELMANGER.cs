@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
 public class LEVELMANGER : MonoBehaviour
 {    
 // Start is called before the first frame update
