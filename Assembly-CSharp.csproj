@@ -587,6 +587,7 @@
     <Compile Include="Assets\Help Me!\unity-ui-extensions\Scripts\Layout\ScrollSnap.cs" />
     <Compile Include="Assets\Help Me!\Scripts\DragMe.cs" />
     <Compile Include="Assets\RealisticCarControllerV3\Scripts\RCC_CarControllerV3.cs" />
+    <Compile Include="Assets\LevelEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Help Me!\unity-ui-extensions\Shaders\UIAdditive.shader" />
