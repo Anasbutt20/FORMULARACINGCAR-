@@ -635,6 +635,7 @@
     <None Include="Assets\Help Me!\Demigiant\DOTweenPro\DOTweenPro.XML" />
     <None Include="Assets\Help Me!\unity-ui-extensions\Shaders\UISoftAdditive.shader" />
     <None Include="Assets\Help Me!\unity-ui-extensions\Shaders\UI Particle AddSmooth.shader" />
+    <None Include="Assets\Shader\Ciconia StudioDouble SidedStandardDiffuse Bump.shader" />
     <None Include="Assets\Cartoon Town and Farm\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
     <None Include="Assets\Help Me!\unity-ui-extensions\Shaders\UIImageCrop.shader" />
     <None Include="Assets\Help Me!\Demigiant\DOTween\readme.txt" />
