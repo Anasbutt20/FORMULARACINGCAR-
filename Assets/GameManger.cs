@@ -9,12 +9,15 @@ public class GameManger : MonoBehaviour
 {
     public GameObject[] cars;
     public GameObject[] levels;
+    public GameObject[] enemiescar;
+    public LevelEditor lvlEditor;
     //[SerializeField] private GameObject _loadercanvas;
     //[SerializeField] private Image _progressbar;
 
     // Start is called before the first frame update
     void Start()
     {
+        lvlEditor = FindObjectOfType<LevelEditor>();
         for (int i = 0; i < cars.Length; i++)
         {
             cars[i].SetActive(false);
@@ -23,13 +26,23 @@ public class GameManger : MonoBehaviour
         cars[selectcar].SetActive(true);
 
 
-        for (int i = 0; i < levels.Length; i++)
+        //for (int i = 0; i < levels.Length; i++)
+        //{
+        //    lvlEditor.lvlManger[LevelSelection.levelNum].level.SetActive(true);
+
+        //}
+        cars[selectcar].transform.position = lvlEditor.lvlManger[LevelSelection.levelNum].playerPosition.position;
+        cars[selectcar].transform.eulerAngles = lvlEditor.lvlManger[LevelSelection.levelNum].playerPosition.eulerAngles;
+
+        for (int i = 0; i < lvlEditor.lvlManger[LevelSelection.levelNum].enemiesPosition.Length; i++)
         {
-            levels[i].SetActive(false);
-            
+            enemiescar[i].transform.position = lvlEditor.lvlManger[LevelSelection.levelNum].enemiesPosition[i].enemiesPos.position;
+            enemiescar[i].transform.eulerAngles = lvlEditor.lvlManger[LevelSelection.levelNum].enemiesPosition[i].enemiesPos.eulerAngles;
+            enemiescar[i].GetComponent<RCC_AICarController>().waypointsContainer = lvlEditor.lvlManger[LevelSelection.levelNum].curreentWayPoint;
         }
 
-        levels[LevelSelection.levelNum].SetActive(true);
+
+        lvlEditor.lvlManger[LevelSelection.levelNum].level.SetActive(true);
     }
 
     // Update is called once per frame
