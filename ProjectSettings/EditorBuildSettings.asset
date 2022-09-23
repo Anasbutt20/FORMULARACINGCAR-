@@ -9,6 +9,18 @@ EditorBuildSettings:
     path: Assets/MainMenu.unity
     guid: e55ceece368680e4e9ed5e384dac2ea4
   - enabled: 1
-    path: Assets/RTG 1.3/Scenes/Scene-01.unity
+    path: Assets/RTG 1.3/Scenes/Level1.unity
     guid: 9590bf11b8d0b7345bc85ac2190e5793
+  - enabled: 1
+    path: Assets/Level2.unity
+    guid: 4e25c812c74e2214b9348243f5ce3212
+  - enabled: 1
+    path: Assets/Level3.unity
+    guid: 54d15d4589a511a4baa2872ce4d1cf08
+  - enabled: 1
+    path: Assets/Level4.unity
+    guid: 0470ff2186022b945a93cc19eaaa5208
+  - enabled: 1
+    path: Assets/Level5.unity
+    guid: 5748005a2ba98874aaf42e1f1e70bbf3
   m_configObjects: {}

@@ -234,7 +234,7 @@ RectTransform:
   - {fileID: 137042583}
   - {fileID: 1683497882}
   m_Father: {fileID: 966103556}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -317,7 +317,7 @@ RectTransform:
   - {fileID: 1966541517}
   - {fileID: 1065435214}
   m_Father: {fileID: 966103556}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -634,7 +634,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &25227442
 GameObject:
@@ -1855,15 +1855,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2118284868}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: LevelSelection, Assembly-CSharp
         m_MethodName: loadscene
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level2 0
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &164009658
@@ -2461,7 +2461,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &209624432
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2797,15 +2797,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2118284868}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: LevelSelection, Assembly-CSharp
         m_MethodName: loadscene
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level1 0
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &222949079
@@ -2930,15 +2930,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2118284868}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: LevelSelection, Assembly-CSharp
         m_MethodName: loadscene
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 4
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level3 0
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &233310697
@@ -3043,7 +3043,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &270505119
 GameObject:
@@ -3208,15 +3208,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2118284868}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: LevelSelection, Assembly-CSharp
         m_MethodName: loadscene
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level1 1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &275179034
@@ -3515,15 +3515,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2118284868}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: LevelSelection, Assembly-CSharp
         m_MethodName: loadscene
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 3
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level2 1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &290337020
@@ -5385,11 +5385,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 572077702}
-  m_LocalRotation: {x: -0.008677717, y: -0.6311563, z: -0.0042196596, w: 0.7755957}
-  m_LocalPosition: {x: -796.73, y: -476.95, z: -41.52}
-  m_LocalScale: {x: 0.69748574, y: 0.6974858, z: 0.6974858}
+  m_LocalRotation: {x: -0.008677716, y: -0.6311563, z: -0.004219659, w: 0.7755957}
+  m_LocalPosition: {x: 57.14203, y: 34.753403, z: -17.867363}
+  m_LocalScale: {x: 0.3001502, y: 0.30015007, z: 0.3001502}
   m_Children: []
-  m_Father: {fileID: 966103556}
+  m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -1.076, y: -78.278, z: 0.253}
 --- !u!1 &594309405
@@ -5656,7 +5656,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -65.539, z: 0}
 --- !u!1 &628421275
 GameObject:
@@ -7300,15 +7300,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2118284868}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: LevelSelection, Assembly-CSharp
         m_MethodName: loadscene
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 5
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level3 1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &812271946
@@ -8046,15 +8046,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2118284868}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: LevelSelection, Assembly-CSharp
         m_MethodName: loadscene
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 8
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level5 0
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &917980477
@@ -8559,7 +8559,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 209624432}
-  - {fileID: 572077705}
   - {fileID: 12059758}
   - {fileID: 1434136674}
   - {fileID: 998270203}
@@ -8567,7 +8566,7 @@ RectTransform:
   - {fileID: 976068708}
   - {fileID: 11970373}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8853,7 +8852,7 @@ RectTransform:
   - {fileID: 726409898}
   - {fileID: 1720833578}
   m_Father: {fileID: 966103556}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -9291,7 +9290,7 @@ RectTransform:
   - {fileID: 473011292}
   - {fileID: 767989435}
   m_Father: {fileID: 966103556}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -9372,7 +9371,7 @@ RectTransform:
   - {fileID: 669245702}
   - {fileID: 2028589240}
   m_Father: {fileID: 966103556}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -10386,15 +10385,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2118284868}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: LevelSelection, Assembly-CSharp
         m_MethodName: loadscene
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 7
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level4 1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1109785611
@@ -11856,15 +11855,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2118284868}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: LevelSelection, Assembly-CSharp
         m_MethodName: loadscene
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 9
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level5 1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1353533493
@@ -11998,7 +11997,7 @@ Transform:
   m_LocalScale: {x: 137.2265, y: 8.7816, z: 122.68773}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.7770001}
 --- !u!1 &1377254677
 GameObject:
@@ -12246,7 +12245,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1434136674
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12262,7 +12261,7 @@ RectTransform:
   - {fileID: 748125522}
   - {fileID: 1237034227}
   m_Father: {fileID: 966103556}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -13244,15 +13243,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2118284868}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: LevelSelection, Assembly-CSharp
         m_MethodName: loadscene
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 6
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level4 0
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1572420345
@@ -15293,7 +15292,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1819550636
 PrefabInstance:
@@ -16996,7 +16995,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2118284866
 MonoBehaviour:
