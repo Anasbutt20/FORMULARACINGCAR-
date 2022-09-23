@@ -71,12 +71,12 @@ public class GameManger : MonoBehaviour
         //_loadercanvas.SetActive(false);
 
         SceneManager.LoadScene(1);
-        for (int i = 0; i < levels.Length; i++)
-        {
-            levels[i].SetActive(false);
-            Time.timeScale = 1;
-            SceneManager.LoadScene(1);
-        }
+        //for (int i = 0; i < levels.Length; i++)
+        //{
+        //    levels[i].SetActive(false);
+        //    Time.timeScale = 1;
+        //    SceneManager.LoadScene(1);
+        //}
 
         levels[LevelSelection.levelNum++].SetActive(true);
         
